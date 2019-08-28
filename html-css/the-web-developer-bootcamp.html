@@ -20,10 +20,10 @@
 </head>
 <body>
 
- <h3>DOCTYPE, HTML, head, meta properties, title and simple SEO techniques </h3>
+ <h3 id="doctype-meta-elements">DOCTYPE, HTML, head, meta properties, title and simple SEO techniques </h3>
  <hr>   
 
- <h3>Block Elements</h3>
+ <h3 id="block-elements">Block Elements</h3>
  <p>
     By default, a <strong>block-level element</strong> occupies the entire space of its parent element (container), thereby creating a "block."
     A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
@@ -58,7 +58,7 @@
         </li>
     </ul>
 </ul>
-<pre> 
+<pre id="preformated-element"> 
     This is pre element. Prefomatted. Another block level element.
     Font family is by default 'monospace'.
 
@@ -75,7 +75,7 @@
         l
 </pre>
  <hr>
-<h3>Inline Elements</h3>
+<h3 id="inline-elements">Inline Elements</h3>
 <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
 <p>Few Inline elements are:</p>
 <p>Buttons, inputs, img, i(italic), span, b(bold), iframe, lables, progress,
@@ -91,23 +91,91 @@
 <strong>strong text</strong>
 <em>emphasized text</em>
 <iframe src="https://www.google.com" frameborder="1">Google</iframe>
-<img src="https://i.pinimg.com/236x/e1/f6/c4/e1f6c43b6b96ef23748f8592f4be0947.jpg" alt="">
+<img src="mario.jpg" alt="Mario Image">
 
 <hr>
 
-<h3>Lists - Ordered and Unordered</h3>
+<h3 id="list-elements">Lists - Ordered and Unordered</h3>
+<ol type='1'  start='50' reversed>
+    <li>Shashank
+        <ul>
+            <li>Shanky</li>
+            <li>Shekher</li>
+        </ul>
+    </li>
+    <li>Nandan</li>
+    <li>Kittu</li>
+</ol>
+<ul>
+    <li>Shashank
+        <ol type="a" start="2" reversed>
+            <li>Shanky</li>
+            <li>Shekher</li>
+        </ol>
+    </li>
+    <li>Nandan</li>
+    <li>Kittu</li>
+</ul>
 <hr>    
 
-<h3>Anchors and Images</h3>
+<h3 id="anchor-elements">Anchors and Images</h3>
+<a href="http://www.google.com" target="_top" rel="noopener noreferrer">Click here to go to google</a>
+<a href="http://www.google.com">Open google here</a>
+<a href="mailto:shashank.spinns@gmail.com">Mail Me</a>
+<a href="tel:+91-9158738481">Facetime Here</a>
+<a href="#top">Top</a>
+<a href="#block-elements">Block Elements</a>
+<a href="#table-elements">Table Demo</a>
+<a href="mario.jpg" download="mario.jpg" target="_blank" rel="noopener noreferrer">Download Mario</a>
 <hr>
 
-<h3>Tables</h3>
+<h3 id="table-elements">Tables</h3>
+<table border="1" bgcolor="aqua" frame="below"  cellspacing="10" cellpadding="10" align="center" >
+    <caption>Table Demo</caption>
+    <thead>
+        <tr>
+            <th>Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+            <th>Header4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>table-row1-cell1</td>
+            <td>table-row1-cell2</td>
+            <td>table-row1-cell3</td>
+            <td>table-row1-cell4</td>
+        </tr>
+        <tr>
+                <td>table-row2-cell1</td>
+                <td>table-row2-cell2</td>
+                <td>table-row2-cell3</td>
+                <td>table-row2-cell4</td>
+        </tr>
+        <tr>
+                <td>table-row3-cell1</td>
+                <td>table-row3-cell2</td>
+                <td>table-row3-cell3</td>
+                <td>table-row3-cell4</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>footer1</td>
+            <td>footer2</td>
+            <td>footer3</td>
+            <td>footer4</td>
+        </tr>
+    </tfoot>
+</table>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">Table Reference</a>
 <hr>
 
-<h3>Form - Element, Input Types and Validations</h3>
+<h3 id="form-elements">Form - Element, Input Types and Validations</h3>
 <hr>
-<h3>HTML attributes</h3>
+<h3 id="html-attributes">HTML attributes</h3>
 <hr>
-<h3>Semantic Elements</h3>
+<h3 id="semantic-elements">HTML Semantics and Accessibility </h3>
 </body>
 </html>
