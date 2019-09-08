@@ -1,39 +1,50 @@
-console.log("Hey Shashank!")
-const logPassedSeconds = () => {
-    let time = 0;
-    setInterval(() => {
-        if(time < 5 )
-        console.log( "time passed: "+ time++ + " secs" )
-    }, 1000)
-}
+const express = require("express");
+const app = express();
 
-//logPassedSeconds();
-
-
-const echo = (str, count)=>{
-    for(i=0; i < count; i++){
-        console.log(str);
+app.get("/", (req,res) => {
+    res.send("Hi there welcome to my assignement!");
+});
+app.get("/speak/:pet", (req,res) => {
+    console.log(req.params);
+    let resStr = "This animal does not say anything.";
+    switch (req.params.pet.toUpperCase() ) {
+        case "COW":
+            resStr = "The cow says 'Moo'"
+            break;
+        case "PIG":
+            resStr = "The pig says 'Oink'"
+            break;
+        case "DOG":
+            resStr = "The dog says 'Woof Woof!'"
+            break;
+        default:
+            break;
     }
-}
+    res.send(resStr);
+});
+app.get("/repeat/:word/:noOfTimes", (req,res) => {
+    console.log(req.params);
+    let resStr = repeatWord(req.params.word, req.params.noOfTimes);
+    
+    res.send(resStr);
+});
 
-// echo("Echo!!!", 10)
-// echo("Tater Tots", 3)
+app.get("*", (req,res) => {
+    res.send( "Sorry, page not found ... What are you doing with your life?" )
+} );
 
-//Average
-const average =(numArr) => {
-    let length = numArr.length;
-    let sum = 0;
-    let counter = 0;
-    while(counter < length){
-        sum += numArr[counter++];
+app.listen(3000, ()=>{
+    console.log("Listening on port 3000");
+} )
+
+
+
+//====================
+
+const repeatWord = (word, noOfTime) => {
+    let concatedWords = "";
+    for (let index = 0; index < noOfTime; index++) {
+        concatedWords += word + " ";
     }
-    //return sum;
-    console.log(Math.round(sum/length));
+    return concatedWords;
 }
-
-let scores = [90, 98, 89, 100, 100, 86, 94];
-let scores2 = [40, 65, 77, 80, 82, 54, 73, 63, 95, 49];
-
-average(scores);
-
-average(scores2);
