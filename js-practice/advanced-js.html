@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./js-practice.css">
+    <script src = "./xmlhttprequest-practice.js" ></script>
+</head>
+<body onload="onDocumentLoad();">
+    <h1 class="align-center">AJAX - XMLHttpRequest - Fetch </h1>
+    <hr>
+        <h5 id="github-zen-quotes"></h5>
+
+    <h3 class="align-center">Basic XMLHttpRequest API Demo - Update Random Dom Images</h3>
+    <img class ="random-dog center padding-10" src="https://images.dog.ceo/breeds/mastiff-bull/n02108422_932.jpg" alt="Random Dog Image">
+    <div >
+        <button  class=" center padding-10" onclick="changeImage();"> Change Image</button>
+    </div>
+    <hr>
+    <h3 class="align-center">Another Basic XMLHttpRequest API Demo</h3>
+        <h5>Bitcoin latest price:</h5><span id="bitcoin-price">Not Fetched Yet</span>
+        <div >
+                <button  class="center padding-10" onclick="fetchLatestPrice();"> Fetch Latest Price</button>
+            </div>
+
+</body>
+</html>

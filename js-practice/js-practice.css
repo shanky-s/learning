@@ -1,0 +1,19 @@
+.align-center{
+    text-align: center;
+}
+
+
+img.center,
+button.center{
+    display: block;
+    margin: 0 auto;
+}
+.padding-10{
+    padding: 10;
+}
+
+img.fixed-size{
+    width:400px;
+    height:400px;
+}
+
