@@ -1,0 +1,85 @@
+body{
+    background: #ecf0f1;
+  font-family: "Coda", sans-serif;
+  
+
+}
+
+.title{
+    color: #2c3e50;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+
+.user-tile{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width:30em;
+    background: white;
+    border-radius: 0.3em;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.avatar{
+    flex:1;
+    padding: 0.5em;
+    
+}
+.avatar-icon{
+    width:10em;
+    height:10em;
+    border-radius: 5em;
+}
+.details{
+    flex:3;
+}
+ .details .user-info p{
+    margin: 0;
+} 
+.details .contact p{
+    margin: 0;
+    font-size: 0.8em;
+    color: #7f8c8d;
+} 
+.next-user{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #16a085;
+    color:white;
+    padding:10;
+    font-size:1.5em;
+
+}
+
+.details .user-info p.user-full-name{
+    color:#16a085;
+    font-family: "varela round", sans-serif;
+    font-size: 1.53em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+.user-name{
+    color: #3498db;
+    font-size: .87em;
+    font-family: "varela round", sans-serif;
+}
+
+.details .contact p.user-email{
+    margin-top: 2em;
+}
+
+.footer button{
+    outline: none;
+    border-radius: 0 0 0.3em 0.3em;
+}
