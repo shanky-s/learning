@@ -1,4 +1,4 @@
-  const getNextUser = () => {
+const getNextUser = () => {
     const url = "https://randomuser.me/api/";
     fetch(url)
     .then(handleErrors)
