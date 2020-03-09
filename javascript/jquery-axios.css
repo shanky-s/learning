@@ -1,0 +1,57 @@
+/* .random-cat-container {
+    margin: 0 auto;
+    display: block;
+} */
+*{
+    font-family: "Cute Font", cursive;
+}
+
+h1,h4,p{
+    text-align: center;
+    
+}
+h1{
+    font-size: 4em;
+}
+
+h4{
+    font-size: 3em;
+}
+p{
+    font-size: 2em;
+}
+p{
+    margin:20px; 
+}
+button{
+    outline: none;
+    border:1px solid goldenrod;
+    background-color: azure;
+    border-radius: 1em;
+    font-size: 2em;
+}
+
+.random-cat-container button {
+    margin: 20px auto 5px ;
+    display: block;
+    
+}
+.random-cat-container h1{
+    text-align: center;
+}
+/* .cat-img-container{
+    margin: 0 auto;
+    display: block;
+} */
+
+.cat-img-container img{
+    margin: 0 auto 5px;
+    display: block;
+}
+
+.btn{
+    margin-left:7%;
+    margin-right:7%;
+    width:10%;
+    
+}

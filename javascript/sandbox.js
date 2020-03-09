@@ -42,7 +42,16 @@ console.log(c);
 //     userResponse = prompt("Please enter your password:");
     
 // } while(userResponse !== password);
+const learnJson =()=>{let a = {
+    x:1,
+    y:2
+}
+let b = JSON.stringify(a)
+console.log(b)
+console.log( typeof(b) )
+}
 
+learnJson();
 
 
 
