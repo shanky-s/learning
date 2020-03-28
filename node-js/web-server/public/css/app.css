@@ -1,0 +1,56 @@
+body{
+    font-family:sans-serif;
+    color:#800080;
+    max-width:100%;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 16px;
+    font-size: 32px; 
+}
+nav{
+    border-bottom: 1px solid #b0c4de;
+    margin:16px;
+    padding: 8px;
+}
+header nav a{
+   
+    font-family:sans-serif;
+    text-decoration: none;
+    color:#b300b3;
+    margin-right:16px;
+    font-size: 16px;
+}
+section{
+    flex-grow: 1;
+}
+section p{
+    margin: 8px;
+    padding: 8px;
+}
+footer{
+    border-top: 1px solid #b0c4de;
+    margin:16px;
+    padding: 8px;
+}
+footer p{
+    color:#cd00cd;
+    
+    
+}
+img.portrait{
+    width: 200px;
+    border-radius: 10px;
+    margin: 16px;
+    
+}
+img.lanscape{
+    width:400px;
+    margin: 16px;
+    border-radius: 10px;
+    
+}
